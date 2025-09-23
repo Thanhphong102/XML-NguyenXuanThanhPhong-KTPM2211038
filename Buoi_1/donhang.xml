@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<orders xmlns:order="http://company.com/order" xmlns:prod="http://company.com/product">
+<!DOCTYPE orders SYSTEM "../Buoi_2/Bai2/donhang.dtd">
+    <orders xmlns:order="http://company.com/order" xmlns:prod="http://company.com/product">
     <order:order id="O001" customer="Nguyễn Văn An" date="2025-03-02">
         <prod:item id="P001" quantity="2" price="15000000">
             <prod:name>Điện thoại Samsung</prod:name>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "orders.dtd">
+<orders>
+    <order id="O001">
+        <product id="P001">
+            <name>Laptop Dell XPS 13</name>
+            <quantity>2</quantity>
+        </product>
+        <product id="P002">
+            <name>Chuot Logitech MX Master</name>
+            <quantity>5</quantity>
+        </product>
+    </order>
+    <order id="O002">
+        <product id="P003">
+            <name>Ban phim co Keychron K8</name>
+            <quantity>3</quantity>
+        </product>
+        <product id="P004">
+            <name>Tai nghe Sony WH-1000XM4</name>
+            <quantity>1</quantity>
+        </product>
+        <product id="P005">
+            <name>Man hinh Samsung 27 inch</name>
+            <quantity>2</quantity>
+        </product>
+    </order>
+</orders>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+    <book id="B001">
+        <title>Nhung ngon doi trong suong</title>
+        <author>Nguyen Ngoc Tu</author>
+        <year>2010</year>
+        <genre>Tieu thuyet</genre>
+    </book>
+    <book id="B002">
+        <title>Cho toi xin mot ve di tuoi tho</title>
+        <author>Nguyen Nhat Anh</author>
+        <year>2008</year>
+        <genre>Truyen ngan</genre>
+    </book>
+    <book id="B003">
+        <title>Tuoi tho du doi</title>
+        <author>Phung Quan</author>
+        <year>1957</year>
+        <genre>Hoi ky</genre>
+    </book>
+</library>
