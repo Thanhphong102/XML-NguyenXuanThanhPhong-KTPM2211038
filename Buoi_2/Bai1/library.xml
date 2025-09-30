@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE library SYSTEM "library.dtd">
-<library>
+<!-- <!DOCTYPE library SYSTEM "library.dtd"> -->
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../Buoi_3/Bai1/library.xsd">
+
     <book id="B001">
         <title>Nhung ngon doi trong suong</title>
         <author>Nguyen Ngoc Tu</author>
@@ -19,4 +22,5 @@
         <year>1957</year>
         <genre>Hoi ky</genre>
     </book>
+
 </library>
