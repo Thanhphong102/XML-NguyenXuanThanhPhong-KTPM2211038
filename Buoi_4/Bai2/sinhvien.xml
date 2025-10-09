@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="sinhvien.xsd">
+
+    <!-- Danh sách khoa -->
+    <KHOAS>
+        <KHOA>
+            <MAKHOA>CNTT</MAKHOA>
+            <TENKHOA>congnghethongtin</TENKHOA>
+        </KHOA>
+        <KHOA>
+            <MAKHOA>KTCK</MAKHOA>
+            <TENKHOA>kythuatcokhi</TENKHOA>
+        </KHOA>
+        <KHOA>
+            <MAKHOA>KHXH</MAKHOA>
+            <TENKHOA>khoahocxahoi</TENKHOA>
+        </KHOA>
+    </KHOAS>
+
+    <!-- Danh sách lớp -->
+    <LOPS>
+        <LOP>
+            <MALOP>KTPM2211</MALOP>
+            <TENLOP>Kỹ thuật phần mềm</TENLOP>
+            <MAKHOA>CNTT</MAKHOA>
+        </LOP>
+        <LOP>
+            <MALOP>HTTT2211</MALOP>
+            <TENLOP>Hệ thống thông tin</TENLOP>
+            <MAKHOA>CNTT</MAKHOA>
+        </LOP>
+        <LOP>
+            <MALOP>KTNL2211</MALOP>
+            <TENLOP>Công nghệ kỹ thuật năng lượng</TENLOP>
+            <MAKHOA>KTCK</MAKHOA>
+        </LOP>
+        <LOP>
+            <MALOP>NGNA2211</MALOP>
+            <TENLOP>Ngôn ngữ anh</TENLOP>
+            <MAKHOA>KHXH</MAKHOA>
+        </LOP>
+    </LOPS>
+
+    <!-- Danh sách sinh viên -->
+    <SINHVIENS>
+        <SINHVIEN>
+            <MSSV>KTNL221101</MSSV>
+            <HOTEN>Nguyễn Văn An</HOTEN>
+            <EMAIL>nvanktnl221101@student.ctuet.edu.vn</EMAIL>
+            <DIACHI>Cần Thơ</DIACHI>
+            <SDT>0901234567</SDT>
+            <MALOP>KTNL2211</MALOP>
+        </SINHVIEN>
+        <SINHVIEN>
+            <MSSV>KTPM221101</MSSV>
+            <HOTEN>Trần Thị Bình</HOTEN>
+            <EMAIL>ttbinhktpm221101@student.ctuet.edu.vn</EMAIL>
+            <DIACHI>Hồ Chí Minh</DIACHI>
+            <SDT>0912345678</SDT>
+            <MALOP>KTPM2211</MALOP>
+        </SINHVIEN>
+        <SINHVIEN>
+            <MSSV>HTTT221101</MSSV>
+            <HOTEN>Lê Hoàng Nam</HOTEN>
+            <EMAIL>lhnamhttt221101@student.ctuet.edu.vn</EMAIL>
+            <DIACHI>Đà Nẵng</DIACHI>
+            <SDT>0934567890</SDT>
+            <MALOP>HTTT2211</MALOP>
+        </SINHVIEN>
+        <SINHVIEN>
+            <MSSV>HTTT221102</MSSV>
+            <HOTEN>Phạm Minh Tuấn</HOTEN>
+            <EMAIL>pmtuanhttt221102@student.ctuet.edu.vn</EMAIL>
+            <DIACHI>Huế</DIACHI>
+            <SDT>0909876543</SDT>
+            <MALOP>HTTT2211</MALOP>
+        </SINHVIEN>
+        <SINHVIEN>
+            <MSSV>NGNA2211</MSSV>
+            <HOTEN>Ngô Thị Hoa</HOTEN>
+            <EMAIL>nthoangna221101@student.ctuet.edu.vn</EMAIL>
+            <DIACHI>Bạc Liêu</DIACHI>
+            <SDT>0923456789</SDT>
+            <MALOP>NGNA2211</MALOP>
+        </SINHVIEN>
+    </SINHVIENS>
+
+</DSSV>

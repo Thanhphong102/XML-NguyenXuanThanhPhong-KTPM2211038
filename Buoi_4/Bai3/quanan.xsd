@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.com/quanan"
+    xmlns="http://www.example.com/quanan"
+    elementFormDefault="qualified">
+
+  <!-- Root -->
+  <xs:element name="QUANAN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DSNHANVIEN" type="DSNhanVienType"/>
+        <xs:element name="DSBAN" type="DSBanType"/>
+        <xs:element name="DSMON" type="DSMonType"/>
+        <xs:element name="DSHOADON" type="DSHoaDonType"/>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- Khóa chính -->
+    <xs:key name="pk_NhanVien">
+      <xs:selector xpath="DSNHANVIEN/NHANVIEN"/>
+      <xs:field xpath="MANV"/>
+    </xs:key>
+
+    <xs:key name="pk_Ban">
+      <xs:selector xpath="DSBAN/BAN"/>
+      <xs:field xpath="TENBAN"/>
+    </xs:key>
+
+    <xs:key name="pk_Mon">
+      <xs:selector xpath="DSMON/MON"/>
+      <xs:field xpath="MAMON"/>
+    </xs:key>
+
+    <xs:key name="pk_HoaDon">
+      <xs:selector xpath="DSHOADON/HOADON"/>
+      <xs:field xpath="SOHD"/>
+    </xs:key>
+
+    <!-- Khóa ngoại -->
+    <xs:keyref name="fk_HoaDon_NhanVien" refer="pk_NhanVien">
+      <xs:selector xpath="DSHOADON/HOADON"/>
+      <xs:field xpath="MANV"/>
+    </xs:keyref>
+
+    <xs:keyref name="fk_HoaDon_Ban" refer="pk_Ban">
+      <xs:selector xpath="DSHOADON/HOADON"/>
+      <xs:field xpath="TENBAN"/>
+    </xs:keyref>
+
+    <xs:keyref name="fk_CTHD_Mon" refer="pk_Mon">
+      <xs:selector xpath="DSHOADON/HOADON/CTHD"/>
+      <xs:field xpath="MAMON"/>
+    </xs:keyref>
+
+  </xs:element>
+
+  <!-- Danh sách các kiểu -->
+  <xs:complexType name="DSNhanVienType">
+    <xs:sequence>
+      <xs:element name="NHANVIEN" type="NhanVienType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DSBanType">
+    <xs:sequence>
+      <xs:element name="BAN" type="BanType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DSMonType">
+    <xs:sequence>
+      <xs:element name="MON" type="MonType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DSHoaDonType">
+    <xs:sequence>
+      <xs:element name="HOADON" type="HoaDonType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Các kiểu chi tiết -->
+  <xs:complexType name="NhanVienType">
+    <xs:sequence>
+      <xs:element name="MANV" type="xs:string"/>
+      <xs:element name="TENNV" type="xs:string"/>
+      <xs:element name="SDT">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="0\d{9}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="DIACHI" type="xs:string"/>
+      <xs:element name="GIOITINH" type="xs:string"/>
+      <xs:element name="USERNAME">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PASSWORD">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BanType">
+    <xs:sequence>
+      <xs:element name="TENBAN" type="xs:string"/>
+      <xs:element name="SOBAN" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MonType">
+    <xs:sequence>
+      <xs:element name="MAMON" type="xs:string"/>
+      <xs:element name="TENMON" type="xs:string"/>
+      <xs:element name="GIA" type="xs:float"/>
+      <xs:element name="HINHANH" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="HoaDonType">
+    <xs:sequence>
+      <xs:element name="SOHD" type="xs:integer"/>
+      <xs:element name="NGAYLAP" type="xs:date"/>
+      <xs:element name="TONGTIEN" type="xs:float"/>
+      <xs:element name="MANV" type="xs:string"/>
+      <xs:element name="TENBAN" type="xs:string"/>
+      <xs:element name="CTHD" type="CTHDType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CTHDType">
+    <xs:sequence>
+      <xs:element name="MAMON" type="xs:string"/>
+      <xs:element name="SOLUONG" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
