@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "ho_ten": { "type": "string" },
+    "tuoi": { "type": "integer" },
+    "gioi_tinh": { "type": "string" },
+    "diem_trung_binh": { "type": "number" },
+    "dia_chi": {
+      "type": "object",
+      "properties": {
+        "thanh_pho": { "type": "string" },
+        "quoc_gia": { "type": "string" }
+      },
+      "required": ["thanh_pho", "quoc_gia"]
+    }
+  },
+  "required": ["ho_ten", "tuoi", "gioi_tinh", "diem_trung_binh", "dia_chi"]
+}

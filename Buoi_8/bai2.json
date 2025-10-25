@@ -1,0 +1,20 @@
+[
+  {
+    "ten_san_pham": "Laptop",
+    "gia_tien": 15000000,
+    "so_luong_ton_kho": 10,
+    "danh_muc": "Điện tử"
+  },
+  {
+    "ten_san_pham": "Điện thoại",
+    "gia_tien": 8000000,
+    "so_luong_ton_kho": 20,
+    "danh_muc": "Di động"
+  },
+  {
+    "ten_san_pham": "Tai nghe",
+    "gia_tien": 500000,
+    "so_luong_ton_kho": 50,
+    "danh_muc": "Phụ kiện"
+  }
+]

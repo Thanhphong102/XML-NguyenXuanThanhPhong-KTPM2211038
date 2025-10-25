@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ten_san_pham": { "type": "string" },
+      "gia_tien": { "type": "integer" },
+      "so_luong_ton_kho": { "type": "integer" },
+      "danh_muc": { "type": "string" }
+    },
+    "required": ["ten_san_pham", "gia_tien", "so_luong_ton_kho", "danh_muc"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "tieu_de": { "type": "string" },
+    "tac_gia": { "type": "string" },
+    "nam_xuat_ban": { "type": "integer" },
+    "the_loai": { "type": "array", "items": { "type": "string" } },
+    "so_trang": { "type": "integer" },
+    "danh_gia": { "type": "number" }
+  },
+  "required": ["tieu_de", "tac_gia", "nam_xuat_ban", "the_loai", "so_trang", "danh_gia"]
+}

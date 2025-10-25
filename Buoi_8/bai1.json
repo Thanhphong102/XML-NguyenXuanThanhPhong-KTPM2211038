@@ -1,0 +1,10 @@
+{
+  "ho_ten": "Nguyễn Văn A",
+  "tuoi": 21,
+  "gioi_tinh": "Nam",
+  "diem_trung_binh": 8.5,
+  "dia_chi": {
+    "thanh_pho": "Hà Nội",
+    "quoc_gia": "Việt Nam"
+  }
+}

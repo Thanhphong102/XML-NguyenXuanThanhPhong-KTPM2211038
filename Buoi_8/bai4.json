@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "ho_ten": "Trần Thị B",
+    "chuc_vu": "Quản lý",
+    "muc_luong": 20000000,
+    "trang_thai": "Đang làm"
+  },
+  {
+    "id": 2,
+    "ho_ten": "Lê Văn C",
+    "chuc_vu": "Nhân viên",
+    "muc_luong": 10000000,
+    "trang_thai": "Đang làm"
+  },
+  {
+    "id": 3,
+    "ho_ten": "Phạm Thị D",
+    "chuc_vu": "Thực tập",
+    "muc_luong": 5000000,
+    "trang_thai": "Nghỉ việc"
+  }
+]
